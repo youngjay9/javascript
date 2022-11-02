@@ -1,12 +1,12 @@
 {
-  "name": "babel-intro",
+  "name": "iife_moment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jay",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "moment": "^2.29.4"
