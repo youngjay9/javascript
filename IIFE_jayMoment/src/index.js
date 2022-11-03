@@ -2,7 +2,7 @@
   /** 
    *  定義 IIFE 的 function；
    *  執行以後在全域可以使用 jayMoment function
-   * @param global -- 全域物件, 用來註冊 jayMoment function
+   * @param global -- 在執行階段,會傳入瀏覽器的全域物件, 用來註冊 jayMoment function
    * @param factory -- function 物件, 回傳一個 function 物件給 jayMoment
    */
    
