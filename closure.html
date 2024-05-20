@@ -1,0 +1,46 @@
+clourse<!DOCTYPE html>
+<html>
+<head>
+    <title>我的網頁</title>
+    <style>
+        /* 在這裡添加你的CSS */
+    </style>
+</head>
+<body>
+    <!-- 在這裡添加你的HTML -->
+
+    <script>
+        
+        function storeMoney(initValue) {
+            /* 
+            闭包: money 變數就稱為閉包變數, storeMoney 函數回傳的每個物件, 都有自己的 money 變數
+            保护了money 不会被外部访问  只能通过addMoney 和 getMoney 方法访问   保护了数据的安全性
+            */ 
+            let money = initValue || 100;
+            
+            return {
+                addMoney: function (value) {
+                    money += value;
+                },
+                decreaseMoney: function (value) {
+                    money -= value;
+                },
+                getMoney: function () {
+                    return money;
+                }
+            }
+        }
+        
+        
+        let myMoney1 = storeMoney(10000);
+        myMoney1.addMoney(100);
+        console.log('myMoney1',myMoney1.getMoney()); // 10100
+
+        let myMoney2 = storeMoney();
+        myMoney2.addMoney(200);
+        console.log('myMoney2',myMoney2.getMoney()); // 300
+  
+  
+    </script>
+</body>
+</html>
